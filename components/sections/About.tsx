@@ -25,28 +25,33 @@ export function About() {
 
           <div className="flex flex-col gap-4 text-[#9CA3AF] leading-relaxed text-base">
             <p>
-              Sou Tech Lead Fullstack com mais de 5 anos construindo sistemas que escalam —
-              de plataformas educacionais com milhares de usuários a produtos SaaS do zero.
-              Formado em Engenharia da Computação, hoje cursando pós-graduação em{' '}
-              <span className="text-[#E8F0FE] font-medium">Inteligência Artificial</span>.
+              Sou{' '}
+              <span className="text-[#E8F0FE] font-medium">Engenheiro de Computação</span> e{' '}
+              <span className="text-[#E8F0FE] font-medium">Tech Lead</span> com foco em
+              resultados reais. Na{' '}
+              <span className="text-[#00FF88] font-medium">Weef Interativa</span>, lidero
+              o desenvolvimento de produtos digitais para empresas como{' '}
+              <span className="text-[#E8F0FE] font-medium">iFood, Agibank, Sebrae, Alfa Tennant</span>{' '}
+              e JÁ Rezende — da arquitetura à entrega, em ambientes ágeis e times multidisciplinares.
             </p>
             <p>
-              Minha abordagem começa sempre pelo problema real. Antes de escrever a primeira
-              linha de código, preciso entender o contexto, os usuários e os trade-offs.
-              Depois vem a arquitetura — deciso, documentada e pensada para durar.
+              Trabalho com{' '}
+              <span className="text-[#00BFFF] font-medium">
+                React, Next.js, Angular, TypeScript, Laravel, Python e Django
+              </span>
+              . Também atuo com IA aplicada — usando{' '}
+              <span className="text-[#00FF88] font-medium">
+                LangChain, LangGraph, OpenAI e Claude AI
+              </span>{' '}
+              para construir agentes e automações inteligentes em produtos reais.
             </p>
             <p>
-              Já liderei times técnicos no{' '}
-              <span className="text-[#E8F0FE] font-medium">iFood</span>,{' '}
-              <span className="text-[#E8F0FE] font-medium">Sebrae</span> e outros,
-              sempre combinando visão de produto com execução técnica rigorosa. Acredito
-              que a melhor tecnologia é aquela que resolve o problema certo, na velocidade
-              certa, com a qualidade que o usuário merece.
-            </p>
-            <p>
-              Uso IA de forma estratégica no meu fluxo de trabalho — para acelerar análise,
-              documentação e desenvolvimento, sem abrir mão de{' '}
-              <span className="text-[#00FF88] font-medium">engenharia sólida</span>.
+              Formado em{' '}
+              <span className="text-[#E8F0FE] font-medium">
+                Engenharia da Computação pela UNIVASF
+              </span>
+              , com base técnica pelo IF Sertão-PE. Acredito que boa tecnologia nasce da
+              união entre estratégia clara, colaboração genuína e execução consistente.
             </p>
           </div>
 
@@ -54,7 +59,7 @@ export function About() {
           <div className="grid grid-cols-2 gap-4 pt-2">
             {[
               { icon: '⚡', label: 'Tech Lead & Arquitetura' },
-              { icon: '🤖', label: 'IA Aplicada a Produtos' },
+              { icon: '🤖', label: 'Agentes & IA Aplicada' },
               { icon: '🌐', label: 'Fullstack (Front + Back)' },
               { icon: '🚀', label: 'Deploy, Cloud & Infra' },
             ].map((item) => (
@@ -98,10 +103,22 @@ export function About() {
                 <span className="text-[#E8F0FE]">,</span>
               </p>
               <p className="pl-4">
+                <span className="text-[#00FF88]">company</span>
+                <span className="text-[#E8F0FE]">: </span>
+                <span className="text-[#FCA5A5]">&quot;Weef Interativa&quot;</span>
+                <span className="text-[#E8F0FE]">,</span>
+              </p>
+              <p className="pl-4">
+                <span className="text-[#00FF88]">education</span>
+                <span className="text-[#E8F0FE]">: </span>
+                <span className="text-[#FCA5A5]">&quot;Eng. Computação — UNIVASF&quot;</span>
+                <span className="text-[#E8F0FE]">,</span>
+              </p>
+              <p className="pl-4">
                 <span className="text-[#00FF88]">focus</span>
                 <span className="text-[#E8F0FE]">: [</span>
               </p>
-              {['Architecture', 'AI Integration', 'Product'].map((f) => (
+              {['Architecture', 'AI Agents', 'Product'].map((f) => (
                 <p key={f} className="pl-8">
                   <span className="text-[#FCA5A5]">&quot;{f}&quot;</span>
                   <span className="text-[#E8F0FE]">,</span>
@@ -111,16 +128,17 @@ export function About() {
                 <span className="text-[#E8F0FE]">],</span>
               </p>
               <p className="pl-4">
-                <span className="text-[#00FF88]">currentlyLearning</span>
-                <span className="text-[#E8F0FE]">: </span>
-                <span className="text-[#FCA5A5]">&quot;Postgraduate in AI&quot;</span>
-                <span className="text-[#E8F0FE]">,</span>
+                <span className="text-[#00FF88]">aiStack</span>
+                <span className="text-[#E8F0FE]">: [</span>
               </p>
+              {['LangChain', 'LangGraph', 'OpenAI', 'Claude AI'].map((f) => (
+                <p key={f} className="pl-8">
+                  <span className="text-[#FCA5A5]">&quot;{f}&quot;</span>
+                  <span className="text-[#E8F0FE]">,</span>
+                </p>
+              ))}
               <p className="pl-4">
-                <span className="text-[#00FF88]">openTo</span>
-                <span className="text-[#E8F0FE]">: </span>
-                <span className="text-[#FCA5A5]">&quot;new challenges&quot;</span>
-                <span className="text-[#E8F0FE]">,</span>
+                <span className="text-[#E8F0FE]">],</span>
               </p>
               <p>
                 <span className="text-[#E8F0FE]">{'}'}</span>

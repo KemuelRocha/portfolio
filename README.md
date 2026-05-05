@@ -13,14 +13,14 @@ Acesse `http://localhost:3000`.
 
 ## Onde inserir as fotos
 
-| Arquivo | Descrição | Tamanho recomendado |
-|---|---|---|
-| `public/images/kemuel.jpg` | Foto de perfil (Hero) | 400×500px, JPG/WebP |
-| `public/images/projects/dhedalos.jpg` | Screenshot do projeto | 800×500px, JPG/WebP |
-| `public/images/projects/ifood.jpg` | Screenshot do projeto | 800×500px |
-| `public/images/projects/agibank.jpg` | Screenshot do projeto | 800×500px |
-| `public/images/projects/vistor.jpg` | Screenshot do projeto | 800×500px |
-| `public/images/projects/saas-financeiro.jpg` | Screenshot do projeto | 800×500px |
+| Arquivo                                      | Descrição             | Tamanho recomendado |
+| -------------------------------------------- | --------------------- | ------------------- |
+| `public/images/kemuel.png`                   | Foto de perfil (Hero) | 400×500px, JPG/WebP |
+| `public/images/projects/dhedalos.png`        | Screenshot do projeto | 800×500px, JPG/WebP |
+| `public/images/projects/ifood.png`           | Screenshot do projeto | 800×500px           |
+| `public/images/projects/agibank.png`         | Screenshot do projeto | 800×500px           |
+| `public/images/projects/vistor.png`          | Screenshot do projeto | 800×500px           |
+| `public/images/projects/saas-financeiro.png` | Screenshot do projeto | 800×500px           |
 
 Substitua os arquivos placeholder mantendo o mesmo nome de arquivo.
 

@@ -1,21 +1,21 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
-import { GlitchText } from '@/components/ui/GlitchText'
-import { TypewriterText } from '@/components/ui/TypewriterText'
-import { NeonButton } from '@/components/ui/NeonButton'
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import { GlitchText } from "@/components/ui/GlitchText";
+import { TypewriterText } from "@/components/ui/TypewriterText";
+import { NeonButton } from "@/components/ui/NeonButton";
 
 const containerVariants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.15, delayChildren: 0.3 } },
-}
+};
 
 const itemVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-}
+};
 
 export function Hero() {
   return (
@@ -25,7 +25,7 @@ export function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            'radial-gradient(ellipse 60% 50% at 30% 60%, rgba(0,255,136,0.07) 0%, transparent 70%)',
+            "radial-gradient(ellipse 60% 50% at 30% 60%, rgba(0,255,136,0.07) 0%, transparent 70%)",
         }}
       />
 
@@ -42,9 +42,9 @@ export function Hero() {
             <motion.div variants={itemVariants}>
               <span
                 className="text-xs tracking-widest text-[#00FF88]/60 uppercase"
-                style={{ fontFamily: 'var(--font-orbitron-var), sans-serif' }}
+                style={{ fontFamily: "var(--font-orbitron-var), sans-serif" }}
               >
-                // Portfolio v1.0
+                // Portfolio
               </span>
             </motion.div>
 
@@ -60,7 +60,7 @@ export function Hero() {
             {/* Typewriter subtitle */}
             <motion.div variants={itemVariants}>
               <TypewriterText
-                texts={['Tech Lead', 'Fullstack Engineer', 'Computer Engineer']}
+                texts={["Tech Lead", "Fullstack Engineer", "Computer Engineer"]}
                 className="text-[clamp(1rem,2.5vw,1.5rem)] text-[#9CA3AF]"
               />
             </motion.div>
@@ -70,12 +70,16 @@ export function Hero() {
               variants={itemVariants}
               className="text-[#6B7280] leading-relaxed max-w-lg text-base"
             >
-              Construo produtos digitais modernos, escaláveis e inteligentes — unindo
-              engenharia de software, arquitetura de sistemas e IA aplicada.
+              Construo produtos digitais modernos, escaláveis e inteligentes —
+              unindo engenharia de software, arquitetura de sistemas e IA
+              aplicada.
             </motion.p>
 
             {/* CTAs */}
-            <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-2">
+            <motion.div
+              variants={itemVariants}
+              className="flex flex-wrap gap-4 pt-2"
+            >
               <NeonButton href="#projects" variant="primary">
                 Ver Projetos
               </NeonButton>
@@ -90,14 +94,14 @@ export function Hero() {
               className="flex gap-8 pt-4 border-t border-[#1E1E1E]"
             >
               {[
-                { value: '5+', label: 'Anos de exp.' },
-                { value: '20+', label: 'Projetos entregues' },
-                { value: '4', label: 'Grandes empresas' },
+                { value: "5+", label: "Anos de exp." },
+                { value: "20+", label: "Projetos entregues" },
+                { value: "4", label: "Grandes empresas" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <p
                     className="text-2xl font-bold text-[#00FF88]"
-                    style={{ fontFamily: 'var(--font-space-mono), monospace' }}
+                    style={{ fontFamily: "var(--font-space-mono), monospace" }}
                   >
                     {stat.value}
                   </p>
@@ -109,35 +113,37 @@ export function Hero() {
 
           {/* Right: photo */}
           <motion.div
-            initial={{ opacity: 0, clipPath: 'inset(0 100% 0 0)' }}
-            animate={{ opacity: 1, clipPath: 'inset(0 0% 0 0)' }}
+            initial={{ opacity: 0, clipPath: "inset(0 100% 0 0)" }}
+            animate={{ opacity: 1, clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="flex justify-center lg:justify-end"
           >
             <motion.div
               animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               className="relative"
             >
               {/* Glow ring */}
               <div
                 className="absolute -inset-3 rounded-2xl opacity-40 blur-xl"
-                style={{ background: 'linear-gradient(135deg, #00FF88, #00BFFF)' }}
+                style={{
+                  background: "linear-gradient(135deg, #00FF88, #00BFFF)",
+                }}
               />
 
               {/* Photo frame */}
               <div
                 className="relative rounded-2xl overflow-hidden"
                 style={{
-                  border: '2px solid #00FF88',
+                  border: "2px solid #00FF88",
                   boxShadow:
-                    '0 0 30px rgba(0,255,136,0.35), 0 0 80px rgba(0,255,136,0.12), inset 0 0 30px rgba(0,255,136,0.05)',
-                  width: 'clamp(240px, 35vw, 380px)',
-                  aspectRatio: '4/5',
+                    "0 0 30px rgba(0,255,136,0.35), 0 0 80px rgba(0,255,136,0.12), inset 0 0 30px rgba(0,255,136,0.05)",
+                  width: "clamp(240px, 35vw, 380px)",
+                  aspectRatio: "4/5",
                 }}
               >
                 <Image
-                  src="/images/kemuel.jpg"
+                  src="/images/kemuel.png"
                   alt="Kemuel Rocha — Tech Lead Fullstack"
                   fill
                   className="object-cover"
@@ -164,18 +170,18 @@ export function Hero() {
       >
         <span
           className="text-[10px] tracking-widest text-[#6B7280] uppercase"
-          style={{ fontFamily: 'var(--font-orbitron-var), sans-serif' }}
+          style={{ fontFamily: "var(--font-orbitron-var), sans-serif" }}
         >
           scroll
         </span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
           className="text-[#00FF88]/50"
         >
           <ChevronDown size={20} />
         </motion.div>
       </motion.div>
     </section>
-  )
+  );
 }

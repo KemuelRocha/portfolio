@@ -5,7 +5,7 @@ import { motion, useInView } from 'framer-motion'
 import { MessageCircle, Mail, Copy, Check } from 'lucide-react'
 import { NeonButton } from '@/components/ui/NeonButton'
 
-const EMAIL = 'kemuel@kemuelrocha.dev'
+const EMAIL = 'kemuelsr@gmail.com'
 
 function IconGithub({ size = 18 }: { size?: number }) {
   return (
@@ -27,19 +27,19 @@ const links = [
   {
     Icon: IconGithub,
     label: 'GitHub',
-    href: 'https://github.com/kemuelrocha',
+    href: 'https://github.com/KemuelRocha',
     color: '#E8F0FE',
   },
   {
     Icon: IconLinkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/kemuelrocha',
+    href: 'https://www.linkedin.com/in/kemuelrocha',
     color: '#00BFFF',
   },
   {
     Icon: MessageCircle,
     label: 'WhatsApp',
-    href: 'https://wa.me/5500000000000',
+    href: 'https://wa.me/5587981070598',
     color: '#00FF88',
   },
 ]
