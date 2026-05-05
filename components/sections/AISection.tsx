@@ -3,7 +3,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Brain, Zap, MessageSquare, FileText, Shield, Cpu } from 'lucide-react'
-import { SectionWrapper } from '@/components/ui/SectionWrapper'
 
 const highlights = [
   {
@@ -162,7 +161,7 @@ export function AISection() {
             className="text-xs text-[#00FF88]/50"
             style={{ fontFamily: 'var(--font-orbitron-var), sans-serif' }}
           >
-            // 04
+            {'// 04'}
           </span>
           <span
             className="text-xs tracking-widest uppercase text-[#00FF88]/70"

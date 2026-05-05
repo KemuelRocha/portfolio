@@ -22,11 +22,19 @@ export const experiences: Experience[] = [
   {
     id: "2",
     company: "Agibank",
-    role: "Desenvolvedor Frontend",
+    role: "Desenvolvedor Fullstack",
     period: "2022 — 2023",
     description:
-      "Criação de landing pages e interfaces focadas em conversão para campanhas de captação. Integração com ferramentas de analytics, A/B testing e CRMs. Foco em SEO técnico e Core Web Vitals.",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Analytics", "SEO"],
+      "Desenvolvimento fullstack de produtos web para gestão de carreiras, calibragem e campanhas digitais. Frontend com Next.js, TypeScript e Tailwind CSS; backend com Django e PostgreSQL. Integração com analytics, SEO técnico e otimização de Core Web Vitals.",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Django",
+      "PostgreSQL",
+      "Analytics",
+    ],
     side: "right",
   },
   {

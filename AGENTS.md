@@ -56,10 +56,4 @@ This repository is a personal portfolio for Kemuel Rocha with a dark retro-futur
 
 ## Known Current State
 
-As of the latest context pass, `npm run lint` fails before any code changes with:
-
-- JSX comment text errors in `Hero`, `AISection`, `Contact`, and `Projects`.
-- React purity errors from `Math.random()` calls during render in `components/sections/Contact.tsx`.
-- Unused imports in `AISection` and `Contact`.
-
-Fix these separately before treating lint as a reliable regression check.
+`npm run lint` passes.

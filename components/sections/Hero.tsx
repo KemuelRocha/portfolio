@@ -44,7 +44,7 @@ export function Hero() {
                 className="text-xs tracking-widest text-[#00FF88]/60 uppercase"
                 style={{ fontFamily: "var(--font-orbitron-var), sans-serif" }}
               >
-                // Portfolio
+                {'// Portfolio'}
               </span>
             </motion.div>
 

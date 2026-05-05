@@ -31,7 +31,7 @@ export function Projects() {
 
         <p className="text-xs text-[#4B5563] mt-8 text-center"
           style={{ fontFamily: 'var(--font-orbitron-var), sans-serif' }}>
-          // mais projetos em breve
+          {'// mais projetos em breve'}
         </p>
       </div>
     </SectionWrapper>

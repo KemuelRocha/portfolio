@@ -3,7 +3,6 @@
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { MessageCircle, Mail, Copy, Check } from 'lucide-react'
-import { NeonButton } from '@/components/ui/NeonButton'
 
 const EMAIL = 'kemuelsr@gmail.com'
 
@@ -44,37 +43,55 @@ const links = [
   },
 ]
 
-function Particle({ x, y, delay }: { x: number; y: number; delay: number }) {
+interface ParticleData {
+  id: number
+  x: string
+  y: string
+  delay: number
+  size: string
+  duration: number
+  color: string
+}
+
+function seededValue(index: number, multiplier: number, offset: number) {
+  const value = Math.sin(index * multiplier + offset) * 10000
+  return value - Math.floor(value)
+}
+
+const particles: ParticleData[] = Array.from({ length: 20 }, (_, i) => ({
+  id: i,
+  x: `${(seededValue(i + 1, 12.9898, 78.233) * 100).toFixed(4)}%`,
+  y: `${(seededValue(i + 1, 39.3467, 11.135) * 100).toFixed(4)}%`,
+  delay: seededValue(i + 1, 73.156, 4.913) * 4,
+  size: `${(seededValue(i + 1, 19.19, 2.17) * 3 + 1).toFixed(4)}px`,
+  duration: seededValue(i + 1, 41.43, 6.77) * 3 + 4,
+  color: seededValue(i + 1, 8.91, 1.23) > 0.5 ? '#00FF88' : '#00BFFF',
+}))
+
+function Particle({ particle }: { particle: ParticleData }) {
   return (
     <motion.div
       className="absolute rounded-full"
       style={{
-        left: `${x}%`,
-        top: `${y}%`,
-        width: Math.random() * 3 + 1,
-        height: Math.random() * 3 + 1,
-        background: Math.random() > 0.5 ? '#00FF88' : '#00BFFF',
+        left: particle.x,
+        top: particle.y,
+        width: particle.size,
+        height: particle.size,
+        backgroundColor: particle.color,
       }}
       animate={{
         y: [0, -30, 0],
         opacity: [0.1, 0.5, 0.1],
       }}
       transition={{
-        duration: 4 + Math.random() * 3,
+        duration: particle.duration,
         repeat: Infinity,
-        delay,
+        delay: particle.delay,
         ease: 'easeInOut',
       }}
     />
   )
 }
-
-const particles = Array.from({ length: 20 }, (_, i) => ({
-  id: i,
-  x: Math.random() * 100,
-  y: Math.random() * 100,
-  delay: Math.random() * 4,
-}))
 
 export function Contact() {
   const ref = useRef(null)
@@ -96,7 +113,7 @@ export function Contact() {
       {/* Particles */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden" aria-hidden="true">
         {particles.map((p) => (
-          <Particle key={p.id} x={p.x} y={p.y} delay={p.delay} />
+          <Particle key={p.id} particle={p} />
         ))}
       </div>
 
@@ -118,7 +135,7 @@ export function Contact() {
             className="text-xs text-[#00FF88]/50"
             style={{ fontFamily: 'var(--font-orbitron-var), sans-serif' }}
           >
-            // 06
+            {'// 06'}
           </span>
           <span
             className="text-xs tracking-widest uppercase text-[#00FF88]/70"
