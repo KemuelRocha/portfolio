@@ -25,10 +25,10 @@ export const stackData: StackCategory[] = [
     category: "Backend",
     color: "#00BFFF",
     items: [
-      { name: "Django", level: 88 },
-      { name: "Node.js", level: 85 },
-      { name: "Laravel", level: 83 },
-      { name: "WordPress", level: 80 },
+      { name: "Django", level: 92 },
+      { name: "Node.js", level: 86 },
+      { name: "Laravel", level: 84 },
+      { name: "WordPress", level: 84 },
     ],
   },
   {
