@@ -35,11 +35,11 @@ export const stackData: StackCategory[] = [
     category: "Infra / DevOps",
     color: "#A78BFA",
     items: [
+      { name: "Git", level: 98 },
       { name: "Docker", level: 84 },
       { name: "Dokku", level: 82 },
       { name: "Nginx", level: 80 },
       { name: "AWS", level: 74 },
-      { name: "Keycloak", level: 68 },
     ],
   },
   {
