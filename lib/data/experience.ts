@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
     id: "2",
     company: "Agibank",
     role: "Desenvolvedor Fullstack",
-    period: "2022 — 2023",
+    period: "2023 — Presente",
     description:
       "Desenvolvimento fullstack de produtos web para gestão de carreiras, calibragem e campanhas digitais. Frontend com Next.js, TypeScript e Tailwind CSS; backend com Django e PostgreSQL. Integração com analytics, SEO técnico e otimização de Core Web Vitals.",
     tech: [
@@ -41,7 +41,7 @@ export const experiences: Experience[] = [
     id: "3",
     company: "Sebrae",
     role: "Tech Lead Fullstack",
-    period: "2020 — 2022",
+    period: "2023 — Presente",
     description:
       "Liderança técnica de plataformas educacionais e sistemas internos. Arquitetura de soluções de onboarding, certificação progressiva e dashboards. Coordenação de equipe de desenvolvimento, documentação técnica e código review.",
     tech: ["Django", "Angular", "PostgreSQL", "Docker", "WordPress"],
@@ -50,11 +50,41 @@ export const experiences: Experience[] = [
   {
     id: "4",
     company: "Tennant Company / Alfa",
-    role: "Desenvolvedor Fullstack",
-    period: "2019 — 2020",
+    role: "Tech Lead Fullstack",
+    period: "2023 — Presente",
     description:
       "Desenvolvimento de dashboards industriais e sistemas de gestão para operações de limpeza e manutenção. Integrações entre ERPs e sistemas legados via ETL. Backend robusto com APIs REST e relatórios automatizados.",
     tech: ["Laravel", "Vue.js", "MySQL", "Docker", "REST API"],
     side: "right",
+  },
+  {
+    id: "5",
+    company: "UNIVASF",
+    role: "Pesquisador / TCC",
+    period: "2022 — 2023",
+    description:
+      "Desenvolvimento de biblioteca Python para assinaturas digitais com certificado ICPEdu, API REST em Django e frontend em React para assinatura de documentos acadêmicos.",
+    tech: ["Python", "Django", "React", "REST API", "ICPEdu"],
+    side: "left",
+  },
+  {
+    id: "6",
+    company: "FACEPE / Lócus de Inovação em Saúde",
+    role: "Bolsista de Desenvolvimento",
+    period: "2022",
+    description:
+      "Desenvolvimento de sites e soluções digitais para o Lócus de Inovação em Saúde de Petrolina, apoiando iniciativas de comunicação e presença web.",
+    tech: ["Web", "HTML", "CSS", "JavaScript", "WordPress"],
+    side: "right",
+  },
+  {
+    id: "7",
+    company: "Freelancer / Projetos próprios",
+    role: "Projetos Freelancer",
+    period: "2016 — 2023",
+    description:
+      "Durante a graduação, desenvolvimento de sites, sistemas web e soluções sob demanda para clientes locais, unindo prática profissional, estudo e projetos independentes.",
+    tech: ["Next.js", "React", "TypeScript", "Django", "Laravel", "PostgreSQL", "Docker"],
+    side: "left",
   },
 ];

@@ -96,7 +96,7 @@ export function Hero() {
               {[
                 { value: "5+", label: "Anos de exp." },
                 { value: "20+", label: "Projetos entregues" },
-                { value: "4", label: "Grandes empresas" },
+                { value: "5+", label: "Grandes empresas" },
               ].map((stat) => (
                 <div key={stat.label}>
                   <p

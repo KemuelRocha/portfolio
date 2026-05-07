@@ -27,24 +27,24 @@ export function TimelineItem({ item, index }: TimelineItemProps) {
         initial={{ opacity: 0, x: isLeft ? -40 : 40 }}
         animate={inView ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.6, delay: index * 0.1, ease: 'easeOut' }}
-        className="flex-1 max-w-lg"
+        className="w-full min-w-0 flex-1 md:max-w-lg"
       >
         <div
-          className="p-5 rounded-xl border border-[#1E1E1E] hover:border-[#00FF88]/30 transition-colors duration-300"
+          className="p-4 sm:p-5 rounded-xl border border-[#1E1E1E] hover:border-[#00FF88]/30 transition-colors duration-300"
           style={{ background: '#111111' }}
         >
-          <div className="flex items-start justify-between gap-2 mb-2">
-            <div>
+          <div className="flex flex-col gap-1 mb-2 sm:flex-row sm:items-start sm:justify-between sm:gap-2">
+            <div className="min-w-0">
               <h3
-                className="text-base font-bold text-[#E8F0FE]"
+                className="text-base font-bold text-[#E8F0FE] break-words"
                 style={{ fontFamily: 'var(--font-space-mono), monospace' }}
               >
                 {item.role}
               </h3>
-              <p className="text-[#00FF88] font-semibold text-sm">{item.company}</p>
+              <p className="text-[#00FF88] font-semibold text-sm break-words">{item.company}</p>
             </div>
             <span
-              className="text-xs text-[#6B7280] whitespace-nowrap pt-0.5"
+              className="text-xs text-[#6B7280] whitespace-nowrap pt-0.5 sm:text-right"
               style={{ fontFamily: 'var(--font-orbitron-var), sans-serif' }}
             >
               {item.period}
