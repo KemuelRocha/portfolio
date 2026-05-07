@@ -146,6 +146,7 @@ export function Hero() {
                   src="/images/kemuel.png"
                   alt="Kemuel Rocha — Tech Lead Fullstack"
                   fill
+                  unoptimized
                   className="object-cover"
                   priority
                   sizes="(max-width: 768px) 240px, (max-width: 1200px) 35vw, 380px"
