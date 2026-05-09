@@ -34,7 +34,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         boxShadow:
           "0 0 30px rgba(0, 255, 136, 0.12), 0 20px 40px rgba(0,0,0,0.4)",
       }}
-      className="group relative flex flex-col rounded-xl overflow-hidden border border-[#1E1E1E] hover:border-[#00FF88]/30 transition-colors duration-300 min-w-[300px] snap-start"
+      className="group relative flex min-w-0 flex-col rounded-xl overflow-hidden border border-[#1E1E1E] hover:border-[#00FF88]/30 transition-colors duration-300 snap-start"
       style={{ background: "#111111" }}
     >
       {/* Screenshot */}

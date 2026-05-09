@@ -21,9 +21,9 @@ export function Projects() {
         </div>
 
         {/* Mobile horizontal scroll */}
-        <div className="md:hidden flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory -mx-6 px-6">
+        <div className="md:hidden flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scroll-px-6 -mx-6 px-6">
           {projects.map((project, index) => (
-            <div key={project.id} className="w-[85vw] flex-shrink-0 snap-start">
+            <div key={project.id} className="w-[calc(100vw-3rem)] flex-shrink-0 snap-start">
               <ProjectCard project={project} index={index} />
             </div>
           ))}
